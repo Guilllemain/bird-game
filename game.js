@@ -161,6 +161,8 @@ const bird = {
         this.frame = this.frame % this.animation.length
 
         if (state.current === state.ready) {
+            this.gravity = 0.15
+            this.jump = 2.6
             this.y = 150
             this.speed = 0
             this.rotation = 0 * DEGREE
